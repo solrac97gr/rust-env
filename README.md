@@ -9,12 +9,12 @@ dotenv="*"
 2. Load the .env file in your code
 
 ```rust
-    dotenv::from_path("./.env").expect("error loading env");
+dotenv::from_path("./.env").expect("error loading env");
 
 ```
 3. Use the standard library for get your variables
 
 ```rust
 let db_users = env::var("DB_USER").expect("env error");
-    let db_password = env::var("DB_PASSWORD").expect("env error");
+let db_password = env::var("DB_PASSWORD").expect("env error");
 ```
